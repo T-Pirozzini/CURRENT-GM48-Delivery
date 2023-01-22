@@ -28,7 +28,7 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"09412b32-6d50-4fcf-b5d6-cb6e79cb4178",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"449bb584-0cc2-41d5-bd50-22da0e9fd1b0",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f2bae8cb-64ce-4a81-8ad1-5d8f9dd66bf6",},
   ],
   "sequence": {
@@ -46,7 +46,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a89d3d3d-5f39-4ee2-a7c3-99b7895cf3e9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"09412b32-6d50-4fcf-b5d6-cb6e79cb4178","path":"sprites/DennyHitRight/DennyHitRight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9c15f844-e5cb-42a4-ae68-e8e83e593a5d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"449bb584-0cc2-41d5-bd50-22da0e9fd1b0","path":"sprites/DennyHitRight/DennyHitRight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"0a22e3d8-3859-49ea-833e-3d543dcde218","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f2bae8cb-64ce-4a81-8ad1-5d8f9dd66bf6","path":"sprites/DennyHitRight/DennyHitRight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
