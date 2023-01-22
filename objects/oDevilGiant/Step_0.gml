@@ -19,10 +19,10 @@ if (xspd < 0) {
 image_xscale = face;
 
 // collisions
-if (place_meeting(x + xspd,y,oWall) || place_meeting(x+xspd,y,oEnemyParent)) {
+if (place_meeting(x+xspd,y,oEnemyParent)) {
 	xspd = 0;
 };
-if (place_meeting(x,y + yspd,oWall) || place_meeting(x,y+yspd,oEnemyParent)) {
+if (place_meeting(x,y+yspd,oEnemyParent)) {
 	yspd = 0;
 };
 

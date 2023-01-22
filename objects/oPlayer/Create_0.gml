@@ -24,6 +24,7 @@ grounded = false;
 
 // player states
 jumping = false;
+floating = false;
 hit = false;
 dead = false;
 

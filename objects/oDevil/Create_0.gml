@@ -1,6 +1,6 @@
 /// @description Insert description here
 
-spd = .5;
+spd = 1;
 dir = 0;
 xspd = 0;
 yspd = 0;

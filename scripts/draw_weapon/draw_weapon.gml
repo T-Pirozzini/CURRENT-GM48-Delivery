@@ -15,5 +15,5 @@ function draw_weapon(){
 		_weaponYscl = -1;
 	};
 
-	draw_sprite_ext(weapon.sprite, 0, x + 8, center_y - 30, 1, _weaponYscl, aim_dir, c_white, 1);
+	draw_sprite_ext(weapon.sprite, 0, x + 4, y - 30, 1, _weaponYscl, aim_dir, c_white, 1);
 }
