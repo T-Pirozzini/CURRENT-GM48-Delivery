@@ -1,5 +1,6 @@
 /// @description Insert description here
 
+if (!dead) {
 // player input
 var _right_key = keyboard_check(ord("D"));
 var _left_key = keyboard_check(ord("A"));
@@ -23,7 +24,16 @@ if (_pause_key) {
 	// walking
 	var _move_x = _right_key - _left_key;
 	var _move_y = _down_key - _jump_key;
-	if (place_meeting(x,y+1,oWall)){
+	if (!place_meeting(x,y+1,oWall)) {			
+			floating = true;
+			grounded = false;
+		};
+	if (place_meeting(x,y+1,oWall)) {	
+			floating = false;
+			grounded = true;			
+		};
+	if (grounded && !floating) {
+		xspd = _move_x * walk_spd;
 		// make sure player is facing correct direction
 		var _current_face = 0;
 		if (_right_key) {
@@ -34,21 +44,17 @@ if (_pause_key) {
 		 _current_face = 1;
 		} else {
 			sprite_index = sprite[_current_face];
-		}
-		// jumping		
-		if (place_meeting(x,y+1,oWall)) && (_jump_key) {
-			yspd = -5;
-			if (_current_face = 0) {
-				sprite_index = DennyJumpRight;
-
-			} else {
-				sprite_index = DennyJumpRight;
-				image_xscale = -1;
-			};			
 		};
-		
-		xspd = _move_x * walk_spd;
-	};	
+	};
+	
+	// jumping		
+	if (grounded && _jump_key) {
+		jumping = true
+		sprite_index = DennyJumpRight;
+		image_speed = 1;
+		grounded = false
+		yspd = -5;						
+	};
 	
 	xspd += gunkick_x;
 	gunkick_x = 0;
@@ -80,7 +86,7 @@ if (_pause_key) {
 		y += yspd;
 		
 // player aiming		
- center_y = y + center_y_offset;
+ center_y = y - 40;
  // aiming
 	aim_dir = point_direction(x, center_y, mouse_x, mouse_y);
  
@@ -122,11 +128,8 @@ if (!place_meeting(x,y+1, oWall) && !_jump_key) {
 		};
 		if (_shoot_key && shoot_timer <= 0) {
 			// reset the timer
-				shoot_timer = weapon.cooldown;
-			
-			// move the player - propulsion
-				
-				
+				shoot_timer = weapon.cooldown;		
+									
 			// create the bullet
 			var _x_offset = lengthdir_x(weapon.length, aim_dir);
 			var _y_offset = lengthdir_x(weapon.length, aim_dir);
@@ -139,8 +142,8 @@ if (!place_meeting(x,y+1, oWall) && !_jump_key) {
 				var _bullet_inst = instance_create_depth(x + _x_offset, center_y + _y_offset, depth-100, weapon.bulletObj);
 				
 				if (current_weapon == 2) {
-					gunkick_x = lengthdir_x(8, aim_dir-180);
-					gunkick_y = lengthdir_y(8, aim_dir-180);
+					gunkick_x = lengthdir_x(10, aim_dir-180);
+					gunkick_y = lengthdir_y(10, aim_dir-180);
 				} else {
 					gunkick_x = lengthdir_x(1.5, aim_dir-180); // -180 moves player opposite of aim dir
 					gunkick_y = lengthdir_y(2, aim_dir-180);
@@ -152,6 +155,26 @@ if (!place_meeting(x,y+1, oWall) && !_jump_key) {
 				};
 			};		
 		};
+		
+		// take damage
+		if (armor > 0) {
+			if (place_meeting(x,y,oEnemyParent)) {
+				hit = true
+				armor--;
+				sprite_index = DennyHitRight;
+				image_speed = 1;
+			};
+		};
+		
+		// death
+		if (armor < 1 && !hit) {
+			if (place_meeting(x,y,oEnemyParent)) {
+				dead = true;
+				sprite_index = DeathAnimation;
+				image_speed = 1;		
+			};
+		};
+};
 		
 			
 		

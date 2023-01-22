@@ -25,6 +25,11 @@ if (place_meeting(x + xspd,y,oWall) || place_meeting(x+xspd,y,oEnemyParent)) {
 if (place_meeting(x,y + yspd,oWall) || place_meeting(x,y+yspd,oEnemyParent)) {
 	yspd = 0;
 };
+if (place_meeting(x,y,oPlayer)) {
+	dead = true;
+	sprite_index = DennyEnemyDevilDeath;
+	image_speed = 1;	
+};
 
 // moving
 x += xspd;
