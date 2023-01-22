@@ -129,7 +129,9 @@ if (!place_meeting(x,y+1, oWall) && !_jump_key) {
 		if (_shoot_key && shoot_timer <= 0) {
 			// reset the timer
 				shoot_timer = weapon.cooldown;		
-									
+			// play sound
+			audio_play_sound(snd_pistol,1,false);
+			
 			// create the bullet
 			var _x_offset = lengthdir_x(weapon.length, aim_dir);
 			var _y_offset = lengthdir_x(weapon.length, aim_dir);
@@ -162,6 +164,7 @@ if (!place_meeting(x,y+1, oWall) && !_jump_key) {
 				hit = true;
 				floating = false;
 				armor--;
+				audio_play_sound(snd_hurt,1,false);
 				sprite_index = DennyHitRight;
 				image_speed = 1;
 			};
@@ -171,6 +174,7 @@ if (!place_meeting(x,y+1, oWall) && !_jump_key) {
 		if (armor < 1 && !hit) {
 			if (place_meeting(x,y,oEnemyParent)) {
 				dead = true;
+				audio_play_sound(snd_death,1,false);
 				sprite_index = DeathAnimation;
 				image_speed = 1;		
 			};
