@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oInstruction",
+  "name": "oMenuStory",
   "spriteId": null,
   "solid": false,
   "visible": true,

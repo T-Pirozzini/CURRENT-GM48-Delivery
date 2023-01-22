@@ -17,6 +17,24 @@ if (enteredRoom && _exit != noone) {
 	enteredRoom = false;
 }
 
+// Find exit trigger
+var _exitEnd = instance_place(x, y, oExitEndTrigger);
+
+// Enter room when trigger area is left
+if (!enteredRoom && _exitEnd == noone) {
+	enteredRoom = true;
+}
+
+// Exit room
+if (enteredRoom && _exitEnd != noone) {
+	room_goto(_exitEnd.targetRoom);
+	
+	oRoomManager.targetInstance = _exitEnd.targetInstance;
+
+	enteredRoom = false;
+}
+
+
 
 // cameras
 #region 
