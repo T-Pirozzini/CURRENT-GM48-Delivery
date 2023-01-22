@@ -7,9 +7,7 @@ if (jumping) {
 };
 
 if (hit) {
-	hit = false;
-	sprite_index = DennyFloatRight;
-	image_speed = 1;
+	hit = false;	
 };
 
 if (dead) {

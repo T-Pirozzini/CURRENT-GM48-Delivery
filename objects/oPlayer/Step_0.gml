@@ -159,7 +159,8 @@ if (!place_meeting(x,y+1, oWall) && !_jump_key) {
 		// take damage
 		if (armor > 0) {
 			if (place_meeting(x,y,oEnemyParent)) {
-				hit = true
+				hit = true;
+				floating = false;
 				armor--;
 				sprite_index = DennyHitRight;
 				image_speed = 1;
