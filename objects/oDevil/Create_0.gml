@@ -9,6 +9,7 @@ face = 1; // set up left and right facing
 
 death_sprite = DennyEnemyDevilDeath;
 hit_sprite = DennyEnemyDevilHit;
+dead = false;
 
 // Inherit the parent event
 event_inherited();

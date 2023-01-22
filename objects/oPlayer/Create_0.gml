@@ -20,6 +20,13 @@ face = 0;
 sprite[0] = DennyFloatRight;
 sprite[1] = DennyFloatLeft;
 
+grounded = false;
+
+// player states
+jumping = false;
+hit = false;
+dead = false;
+
 
 // weapons
 	shoot_timer = 0;

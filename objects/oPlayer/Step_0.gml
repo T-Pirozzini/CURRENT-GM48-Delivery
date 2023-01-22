@@ -1,5 +1,6 @@
 /// @description Insert description here
 
+if (!dead) {
 // player input
 var _right_key = keyboard_check(ord("D"));
 var _left_key = keyboard_check(ord("A"));
@@ -23,7 +24,11 @@ if (_pause_key) {
 	// walking
 	var _move_x = _right_key - _left_key;
 	var _move_y = _down_key - _jump_key;
-	if (place_meeting(x,y+1,oWall)){
+	if (place_meeting(x,y+1,oWall)) {			
+			grounded = true;			
+		};
+	if (grounded) {
+		xspd = _move_x * walk_spd;
 		// make sure player is facing correct direction
 		var _current_face = 0;
 		if (_right_key) {
@@ -34,21 +39,17 @@ if (_pause_key) {
 		 _current_face = 1;
 		} else {
 			sprite_index = sprite[_current_face];
-		}
-		// jumping		
-		if (place_meeting(x,y+1,oWall)) && (_jump_key) {
-			yspd = -5;
-			if (_current_face = 0) {
-				sprite_index = DennyJumpRight;
-
-			} else {
-				sprite_index = DennyJumpRight;
-				image_xscale = -1;
-			};			
 		};
-		
-		xspd = _move_x * walk_spd;
-	};	
+	};
+	
+	// jumping		
+	if (grounded && _jump_key) {
+		jumping = true
+		sprite_index = DennyJumpRight;
+		image_speed = 1;
+		grounded = false
+		yspd = -5;						
+	};
 	
 	xspd += gunkick_x;
 	gunkick_x = 0;
@@ -152,6 +153,26 @@ if (!place_meeting(x,y+1, oWall) && !_jump_key) {
 				};
 			};		
 		};
+		
+		// take damage
+		if (armor > 0) {
+			if (place_meeting(x,y,oEnemyParent)) {
+				hit = true
+				armor--;
+				sprite_index = DennyHitRight;
+				image_speed = 1;
+			};
+		};
+		
+		// death
+		if (armor < 1) {
+			if (place_meeting(x,y,oEnemyParent)) {
+				dead = true;
+				sprite_index = DeathAnimation;
+				image_speed = 1;		
+			};
+		};
+};
 		
 			
 		
