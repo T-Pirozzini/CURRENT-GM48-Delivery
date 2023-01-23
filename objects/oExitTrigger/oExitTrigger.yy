@@ -27,7 +27,7 @@
   "eventList": [],
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"targetInstance","varType":4,"value":"noone","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"targetRoom","varType":5,"value":"Room2","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"targetRoom","varType":5,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
         "GMRoom",
       ],},
   ],
