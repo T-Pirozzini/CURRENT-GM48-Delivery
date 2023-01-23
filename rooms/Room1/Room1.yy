@@ -26,9 +26,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3AF16659","properties":[],"isDnd":false,"objectId":{"name":"oArmor","path":"objects/oArmor/oArmor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":2272.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2E8F220D","properties":[],"isDnd":false,"objectId":{"name":"oShield","path":"objects/oShield/oShield.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":768.0,"y":800.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_27F1AB40","properties":[],"isDnd":false,"objectId":{"name":"oRoomManager","path":"objects/oRoomManager/oRoomManager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":800.0,"y":2400.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6B3A6A8F","properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"targetRoom","path":"objects/oExitTrigger/oExitTrigger.yy",},"objectId":{"name":"oExitTrigger","path":"objects/oExitTrigger/oExitTrigger.yy",},"value":"Room2",},
-          ],"isDnd":false,"objectId":{"name":"oExitTrigger","path":"objects/oExitTrigger/oExitTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":576.0,"y":2400.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_44767E7","properties":[],"isDnd":false,"objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":2400.0,},
@@ -2389,7 +2386,6 @@
     {"name":"inst_6E5443EC","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_27F1AB40","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_247D340A","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_6B3A6A8F","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
