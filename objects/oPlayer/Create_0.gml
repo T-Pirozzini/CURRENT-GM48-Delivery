@@ -41,3 +41,6 @@ dead = false;
 
 current_weapon = 0;
 weapon = global.PlayerWeapons[current_weapon];
+
+// room transitions
+enteredRoom = false;
