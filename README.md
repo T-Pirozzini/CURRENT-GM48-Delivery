@@ -1,7 +1,8 @@
 # Soulo :ghost:
 
 This game was created during GM48's 44th GameJam as a team project. <br>
-To see the original submission click here: <a href=https://gm48.net/game/2078/soulo>GM48 Soulo</a>
+To see the original submission click here: <a href=https://gm48.net/game/2078/soulo>GM48 Soulo</a> <br>
+<a href=https://drive.google.com/drive/folders/1NzrmawuwvrYOIOw-_bXu4MfO6NtIOBZ4>Download the game here</a>
 
 ## Objective:
 
