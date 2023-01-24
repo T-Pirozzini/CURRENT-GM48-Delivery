@@ -11,7 +11,7 @@ Deliver your soul back to your body.</em> :ghost:
 
 ## Challenges:
 
-<p>This was our first time doing a group project on GameMaker, so encountered many issues with version control while working together.</p>
+<p>This was our first time doing a group project on GameMaker, so we encountered many issues with version control while working together.</p>
 
 ## Gameplay
 
@@ -53,7 +53,7 @@ Just in case any bugs occur and you aren't able to experience the whole story:
 - Haydn - Amazing pixel artist that provided us with the character and weapon sprites
 - Allison James - For the "Murder She Wrote" theme song
 
-#### Known Bugs
+#### Known Bugs:
 
 - Enemies continue to show their death effect if you keep shooting them. Avoid the particles after killing an enemy to avoid taking damage.
 - Some room transitions are out of order or not going where intended.
