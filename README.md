@@ -1,6 +1,6 @@
 # Soulo
 
-To see the original submission click here: https://gm48.net/game/2078/soulo
+To see the original submission click here: <a href=https://gm48.net/game/2078/soulo>GM48 Soulo</a>
 
 ## Objective:
 
