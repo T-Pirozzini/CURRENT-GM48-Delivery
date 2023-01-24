@@ -1,13 +1,12 @@
-# Soulo
+# Soulo :ghost:
 
+This game was created during GM48's 44th GameJam as a team project. <br>
 To see the original submission click here: <a href=https://gm48.net/game/2078/soulo>GM48 Soulo</a>
 
 ## Objective:
 
 <em>Fight your way through the realm of limbo between life and death for a second chance at life!
 Deliver your soul back to your body.</em> :ghost:
-
-## This game was created during GM48's 44th GameJam
 
 ## Challenges:
 
