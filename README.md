@@ -20,10 +20,10 @@ Deliver your soul back to your body.</em> :ghost:
 
 ### Controls:
 
-W: Jump
-A: Left
-D: Right
-Left-Shift: Switch Weapon (Pistol, Machine Gun, Shotgun)
+W: Jump <br>
+A: Left <br>
+D: Right <br>
+Left-Shift: Switch Weapon (Pistol, Machine Gun, Shotgun) <br>
 Mouse Left-Click: Shoot
 
 Just in case any bugs occur and you aren't able to experience the whole story:
