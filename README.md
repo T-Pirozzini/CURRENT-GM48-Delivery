@@ -1,5 +1,7 @@
 # Soulo
 
+To see the original submission click here: https://gm48.net/game/2078/soulo
+
 ## Objective:
 
 <em>Fight your way through the realm of limbo between life and death for a second chance at life!
