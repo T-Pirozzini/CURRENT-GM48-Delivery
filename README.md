@@ -50,7 +50,7 @@ Just in case any bugs occur and you aren't able to experience the whole story:
 
 ## Credit:
 
-- Haydn - Amazing pixel artist that provided us with the character and weapon sprites
+- Haydn - Amazing pixel artist that provided us with the character and enemy sprites
 - Allison James - For the "Murder She Wrote" theme song
 
 #### Known Bugs:
