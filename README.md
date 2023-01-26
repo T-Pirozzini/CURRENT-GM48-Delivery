@@ -48,6 +48,9 @@ Just in case any bugs occur and you aren't able to experience the whole story:
 
 ![Ending](https://github.com/T-Pirozzini/CURRENT-GM48-Delivery/blob/c13b5b229d0f931a8087d5d495b7fc2b7b43534c/images/end_screen.png)
 
+## :video_camera: Video Demo
+https://user-images.githubusercontent.com/90930100/214973466-352325f5-1c87-4753-b7de-455f08c60b62.mp4
+
 ## Credit:
 
 - Haydn - Amazing pixel artist that provided us with the character and enemy sprites
